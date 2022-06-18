@@ -22,14 +22,13 @@
 
       * {
         font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-          Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
-          'Noto Sans KR', 'Malgun Gothic', sans-serif;
+          Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+          "Noto Sans KR", "Malgun Gothic", sans-serif;
       }
 
       body {
         height: 100%;
         padding: 10%;
-        background: var(--background);
         box-sizing: border-box;
       }
 
@@ -41,17 +40,19 @@
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 300px;
+        /* height: 300px; */
         padding: 22px;
+        border: solid 1px var(--dark);
         border-radius: 20px;
-        gap: 0.5rem;
+        column-gap: 1rem;
         background: #fff;
         box-shadow: 0px 4px 12px 0px #51459f14;
       }
 
       .item {
         height: 40px;
-        padding: 10px; /* 콘텐츠에 따라 조절해주세요 */
+        padding: 55px; /* 콘텐츠에 따라 조절해주세요 */
+        border: solid 1px var(--dark);
         border-radius: 20px;
         background-color: var(--primary);
         color: var(--white);
@@ -68,14 +69,13 @@
   </head>
 
   <body>
-    <h1>Grid</h1>
     <div class="container">
       <div class="item">grid1</div>
       <div class="item even">grid2</div>
-      <div class="item">grid3</div> 
-      <div class="item even">grid4</div>
-      <div class="item">grid5</div>
-      <div class="item even">grid6</div>
+      <div class="item">grid3</div>
+      <div class="item">grid4</div>
+      <div class="item even">grid5</div>
+      <div class="item">grid6</div>
     </div>
   </body>
 </html>

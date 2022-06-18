@@ -34,8 +34,9 @@
 
       .container {
         display: flex;
+        flex-wrap: wrap;
         /* flex-direction: column; */
-        justify-content: space-between;
+        align-content: flex-end;
         width: 70%;
         height: 300px;
         padding: 22px;
@@ -48,7 +49,7 @@
       }
 
       .item {
-        height: 40px;
+        height: 30px;
         padding: 40px 50px; /* 콘텐츠에 따라 조절해주세요 */
         border: 1px solid var(--dark);
         border-radius: 20px;
@@ -71,6 +72,11 @@
       <div class="item">1</div>
       <div class="item even">2</div>
       <div class="item">3</div>
+      <div class="item even">4</div>
+      <div class="item">5</div>
+      <div class="item even">6</div>
+      <div class="item">7</div>
+      <div class="item even">8</div>
     </div>
   </body>
 </html>
